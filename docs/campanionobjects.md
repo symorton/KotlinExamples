@@ -22,15 +22,15 @@ fun enrole(courseName:String) {
 }
 ```
 
-###Singletons used a anti-pattern
+### Singletons used a anti-pattern
 * Hard to test and reuse
 
-###Objects
+### Objects
 * Can derive from other classes/interfaces
 * Can bu used where any ‘instance’ is used
 * Can be declared inside of other classes
 
-###Companion Object
+### Companion Object
 * Factory object and static members
 * Essentially static functions on that class
 * create() methods
