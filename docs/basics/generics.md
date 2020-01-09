@@ -60,7 +60,19 @@ class FinanceMeeting : Meeting() {}
 Non-inline Type Parameters
 * Sometimes need to make a parameter not-inline when the function is inline
 
-```
-fun <T : Meeting> buildMeeting(meetingClass: Class<T>, action: (T) -> Unit): T {
-    
-}
+Kotlin Variance
+* 'in' and 'out' Keywords
+* Declaration site variance
+    * Generally more elegant
+* Kotlin also supports 'use site' 
+
+Covariant
+* Derived type can be used where base type is more specific
+* Marked as 'out' parameter
+* only ever getting something out of T when using lists and maps and such
+
+Contravariance
+* Base type can be used where derived type is more specific 
+* mark as 'in'
+
+
